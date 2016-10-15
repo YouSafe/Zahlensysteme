@@ -81,7 +81,7 @@ public class Controller implements Initializable {
 
         });
 
-        menuAbout.setOnAction(event -> new AlertBox("Credits", "by Yousif E. 2016 © \nAll rights reserved.").display());
+        menuAbout.setOnAction(event -> new AlertBox("Credits", "by Yousif E. 2016 © \nAll rights reserved.\nSourcecode: https://github.com/YouSafe/Zahlensysteme").display());
         menuClose.setOnAction(event -> ((Stage) mainPane.getScene().getWindow()).close());
     }
 
