@@ -1,4 +1,4 @@
-package at.yousif.numbersystems.Utils;
+package at.yousif.numbersystems.utils;
 
 import at.yousif.numbersystems.Main;
 import javafx.scene.control.Alert;

@@ -1,8 +1,8 @@
 package at.yousif.numbersystems;
 
-import at.yousif.numbersystems.Utils.AlertBox;
-import at.yousif.numbersystems.Utils.SelectorBox;
-import at.yousif.numbersystems.Utils.Utils;
+import at.yousif.numbersystems.utils.AlertBox;
+import at.yousif.numbersystems.utils.SelectorBox;
+import at.yousif.numbersystems.utils.Utils;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
