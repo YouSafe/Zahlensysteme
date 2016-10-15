@@ -69,10 +69,10 @@ public class Controller implements Initializable {
         });
 
         menuFontsize.setOnAction(event -> {
-            SelectorBox schriftgröße = new SelectorBox("Schriftgröße", "Wähle eine Schriftgöße aus:", currentFontsize + "pt");
-            schriftgröße.addChoice("8pt", "10pt", "12pt", "14pt", "18pt");
+            SelectorBox fontSize = new SelectorBox("Schriftgröße", "Wähle eine Schriftgöße aus:", currentFontsize + "pt");
+            fontSize.addChoice("8pt", "10pt", "12pt", "14pt", "18pt");
 
-            String output = schriftgröße.display();
+            String output = fontSize.display();
 
             if (output != null) {
                 currentFontsize = Integer.valueOf(output.replaceAll("pt", ""));
@@ -85,9 +85,9 @@ public class Controller implements Initializable {
         menuClose.setOnAction(event -> ((Stage) mainPane.getScene().getWindow()).close());
     }
 
-    private void changeFontsize(int fontsize) {
-        DoubleProperty fontSize = new SimpleDoubleProperty(fontsize);
-        mainPane.styleProperty().bind(Bindings.format("-fx-font-size: %.2fpt;", fontSize));
+    private void changeFontsize(int fontSize) {
+        DoubleProperty property = new SimpleDoubleProperty(fontSize);
+        mainPane.styleProperty().bind(Bindings.format("-fx-font-size: %.2fpt;", property));
     }
 
 }
