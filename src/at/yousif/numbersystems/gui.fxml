@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.yousif.numbersystems.Controller" maxHeight="-Infinity"
+            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Datei">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Schließen" fx:id="menuClose"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Bearbeiten">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Schriftgröße" fx:id="menuFontsize"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Hilfe">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Über" fx:id="menuAbout"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <VBox BorderPane.alignment="CENTER" fx:id="mainPane">
+            <children>
+                <Label text="Zahl"/>
+                <TextField fx:id="numberField"/>
+                <Label text="Basis"/>
+                <Slider fx:id="basisSlider" blockIncrement="1.0" majorTickUnit="1.0" max="16.0" min="2.0"
+                        minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true"/>
+                <TextArea fx:id="textarea" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true"
+                          VBox.vgrow="ALWAYS"/>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>
